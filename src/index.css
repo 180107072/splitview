@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.splitview__root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+
+}
+
+.splitview__sash {
+  position: absolute;
+  z-index: 9999;
+  background: #fff;
+  width: 1px;
+  height: 1px;
+}
+
+.splitview__sash:hover {
+  border: 1px solid #fff;
+  transform: translateX(-1px);
+}
+
+.splitview__sash_horizontal {
+  height: 100%;
+}
+
+.splitview__sash_vertical {
+  width: 100%;
+}
+
+.splitview__pane {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
